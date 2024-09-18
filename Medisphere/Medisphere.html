@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medisphere - Medical Review Home</title>
+    <link rel="stylesheet" href="MSStyle.css">
+</head>
+<body>
+<!-- Nav section starts here -->
+    <nav>
+        <div class="logo-container">
+            <img src="mslogo.png" Medisphere Logo class="logo"> <!-- Placeholder for logo -->
+            <h1>Medisphere</h1>
+        </div>
+        <div class="nav-links">
+            <a href="review.html" id="makeReviewLink">Make Review</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-button" id="loginBtn">Log In</button>
+            <button class="sign-up-button" id="signupBtn">Sign Up</button>
+        </div>
+    </nav>
+<!-- Nav section ends here -->
+
+<!-- Hero section starts here -->
+    <div class="hero">
+        <h1>Your Health, Our Priority</h1>
+    </div>
+<!-- Hero section ends here -->
+
+<!-- Our services section starts here -->
+<section id="our-services">
+    <h2>Our Services</h2> <br>
+    <div class="slideshow-container">
+
+        <div class="service-slide active">
+            <img src="reviews.jpg" alt="Medical Reviews">
+            <p><h3>Comprehensive Medical Reviews</h3> 
+                <br> In-depth evaluations of healthcare providers based on patient experiences and medical outcomes.</p>
+        </div>
+
+        <div class="service-slide">
+            <img src="consultation.jpg" alt="Expert Consultations">
+            <p><h3>Expert Consultations</h3> <br>
+                Access to professional advice from a network of medical specialists to help you better understand your health and treatment options.</p>
+        </div>
+
+        <!-- <div class="service-slide">
+            <img src="service3.jpg" alt="Health Assessments">
+            <p><h3>Health Assessments</h3> <br>
+                Tools and resources to assess your health status and recommend preventive measures or treatment options tailored to your needs.</p>
+        </div> -->
+
+        <div class="service-slide">
+            <img src="service4.png" alt="Provider Ratings">
+            <p><h3>Provider Ratings</h3> <br>
+                A rating system that allows you to compare healthcare providers based on quality, accessibility, and patient satisfaction.</p>
+        </div>
+
+        <div class="service-slide">
+            <img src="service5.jpg" alt="Patient Feedback">
+            <p><h3>Patient Feedback</h3> <br>
+                A platform where you can read honest reviews and share your own experiences with healthcare professionals, helping others make better choices.</p>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+<!-- Our services section ends here -->
+
+<!-- Become a member section starts here -->
+<div class="section">
+    <p><strong>Get Started</strong></p>
+    <div id="sectionContainer"></div> 
+<div class="member-buttons">
+    <button id="becomeMemberBtn" class="member-button get-started-button">Become a Member</button>
+</div> 
+</div>
+<!-- Become a member section ends here -->
+
+<!-- Recent reviews section starts here -->
+<div class="review-section">
+    <br>
+    <h2>Recent Reviews</h2>
+    <div class="review-container">
+        <br>
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <div class="review-wrapper" id="reviewWrapper">
+            <div class="reviews" id="reviewCards">
+            <div class="review-card">
+                <img src="plankton.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Plankton</h3>
+                <div class="star-rating">★★☆☆☆</div>
+                <p class="review-text">Dr. Tiny? More like Dr. Doesn't-Care! 
+                    Just because I’m small doesn’t mean my injuries don’t matter! 
+                    He barely even noticed me on the examination table, and I had to yell to get his attention.
+                     I demand more respect next time... if there is a next time.</p>
+            </div>
+            <div class="review-card">
+                <img src="sandy.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Sandy Cheeks</h3>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">Dr. Reef was a lifesaver!
+                    I had a little accident in my lab, but he knew just what to do. 
+                   He’s real smart and quick on his fins. 
+                   Plus, he had some advanced scientific gadgets I didn’t even know they had down here! 
+                   I reckon I’d go back to him if I ever get into another pickle.</p>
+            </div>
+            <div class="review-card">
+                <img src="krabs.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Mr. Krabs</h3>
+                <div class="star-rating">★★★☆☆</div>
+                <p class="review-text">I had the misfortune of meeting Dr. Gillmore, and let me tell you, it was a disaster. 
+                    He took forever to see me, and when he did, he kept making small talk like I was interested in his boring life. 
+                    I was there to fix my aching tentacles, not hear about his underwater yoga class!</p>
+            </div>
+            <div class="review-card">
+                <img src="spongebob.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>SpongeBob SquarePants</h3>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">Dr. Bubbles is the friendliest doctor ever! He made me feel super comfortable and even told me a joke while fixing my jellyfish sting. 
+                    The best part? He gave me a lollipop at the end! I wish I could see him every day... but I guess it’s good I don’t need to. Hehe!</p>
+            </div>
+            <div class="review-card">
+                <img src="squidward.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Squidward Tentacles</h3>
+                <div class="star-rating">★☆☆☆☆</div>
+                <p class="review-text">I had the misfortune of meeting Dr. Gillmore, and let me tell you, it was a disaster. 
+                    He took forever to see me, and when he did, he kept making small talk like I was interested in his boring life. 
+                    I was there to fix my aching tentacles, not hear about his underwater yoga class!</p>
+            </div>
+            <div class="review-card">
+                <img src="patrick.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Patrick Star</h3>
+                <div class="star-rating">★★☆☆☆</div>
+                <p class="review-text">Dr. Fishsticks was okay, I guess. 
+                    He gave me some band-aids, but I thought they were snacks and ate them by accident. 
+                    Then he got all serious and told me I wasn’t supposed to eat them... Bummer. But the nap I had in his office was nice.</p>
+            </div>
+            <div class="review-card">
+                <img src="gary.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Gary the Snail</h3>
+                <div class="star-rating">★★★★☆</div>
+                <p class="review-text">Meow.</p>
+            </div>
+
+            <div class="review-card">
+                <img src="bunny.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Bugs Bunny</h3>
+                <div class="star-rating">★★★★☆</div>
+                <p class="review-text">Eh, what's up, Doc? Dr. Wheeler was pretty good! He got to the point quick, no dilly-dallying, and I was outta there faster than a rabbit hole escape. 
+                    The only issue? He didn't have any carrots in the waiting room. C'mon, doc, give a bunny a break!</p>
+            </div>
+            
+            <div class="review-card">
+                <img src="duck.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Daffy Duck</h3>
+                <div class="star-rating">★★☆☆☆</div>
+                <p class="review-text">Th-th-th-there’s no way I’m going back to Dr. Quackers! I had a simple bill adjustment, but he kept talking over me. 
+                    If I wanted to be ignored, I’d go back to the pond! Completely unacceptable. I'd give him one star, but the clinic had nice magazines.</p>
+            </div>
+
+            <div class="review-card">
+                <img src="homer.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Homer Simpson</h3>
+                <div class="star-rating">★★★☆☆</div>
+                <p class="review-text">Mmm... donuts in the waiting room were the best part. Dr. Hartman was okay, but he kept using big, confusing words. 
+                    He told me to cut down on my "Duff" intake, whatever that means. If it wasn’t for the free snacks, I’d probably have left early.</p>
+            </div>
+            
+            <div class="review-card">
+                <img src="johnny.jpeg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Johnny Bravo</h3>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">Whoa, mama! Dr. Strong is the best! Fast, efficient, and hey, she didn’t even mind me flexing in the mirror before the check-up. 
+                    She fixed my back pain and didn’t mind a little show from yours truly. A 5-star doc, for sure!</p>
+            </div>      
+            <div class="review-card">
+                <img src="gumball.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Gumball Watterson</h3>
+                <div class="star-rating">★★★☆☆</div>
+                <p class="review-text">Dr. Patel was alright, I guess. He spent a lot of time explaining stuff, which was kind of boring. 
+                    But at least I got a lollipop at the end! I just wish he would’ve seen me sooner – my tail was numb from waiting so long!</p>
+            </div>
+            
+            <div class="review-card">
+                <img src="darwin.jpg" alt="Reviewer's Avatar" class="avatar">
+                <h3>Darwin Watterson</h3>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">Dr. Lee was fantastic! She was super kind and explained everything in a way that even I could understand. 
+                    Plus, she helped me get rid of that weird fishy rash. 10/10 would recommend!</p>
+            </div>      
+            <!-- More review cards -->
+        </div>
+    </div>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+<!-- Progress Dots -->
+<div class="progress-bar">
+    <div class="progress-dot" id="dot1" onclick="currentSlide(1)"></div>
+    <div class="progress-dot" id="dot2" onclick="currentSlide(2)"></div>
+    <div class="progress-dot" id="dot3" onclick="currentSlide(3)"></div>
+</div>
+</div> 
+</div>
+<!-- Recent reviews section ends here --> 
+
+<!-- Categories section starts here -->
+<div class="categories-section">
+    <h2>Doctor Categories</h2>
+    <div class="categories-buttons">
+        <button class="category-btn">General Practitioner</button>
+        <button class="category-btn">Cardiologist</button>
+        <button class="category-btn">Neurologist</button>
+        <button class="category-btn">Dermatologist</button>
+        <button class="category-btn">Pediatrician</button>
+        <button class="category-btn">Anesthesiology</button>
+        <button class="category-btn">Dermatology</button>
+        <button class="category-btn">Emergency Medicine</button>
+        <button class="category-btn">Endocrinology</button>
+        <button class="category-btn">Family Medicine</button>
+        <button class="category-btn">Internal Medicine</button>
+        <button class="category-btn">Neurology</button>
+        <button class="category-btn">Nuclear Medicine</button>
+        <button class="category-btn">Obstetrics and Gynecology</button>
+        <button class="category-btn">Ophthalmology</button>
+        <button class="category-btn">Orthopedic Surgery</button>
+        <button class="category-btn">Pathology</button>
+        <button class="category-btn">Pediatrics</button>
+        <button class="category-btn">Plastic Surgery</button>
+        <button class="category-btn">Physical Medicine and Rehabilitation</button>
+        <button class="category-btn">Preventive Medicine</button>
+        <button class="category-btn">Psychiatry</button>
+        <button class="category-btn">Radiology</button>
+        <button class="category-btn">Sleep Medicine</button>
+        <button class="category-btn">Surgery</button>
+        <button class="category-btn">Allergy and Immunology</button>
+        <button class="category-btn">Medical/Clinical Genetics</button>
+        <button class="category-btn">Radiation Oncology</button>
+
+    </div>
+</div>
+<!-- Categories section ends here -->
+
+<!-- Footer section starts here --> 
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+        
+            <h4>Contact Us</h4>
+            <p>B-3-13, Pusat Perdagangan<br> Icon City Petaling Jaya, <br>No 1B Jalan Ss8/39, <br>47300 Selangor, Malaysia.</p>
+            <p>Tel: (+60)386842420, <br>(+60)378630993.</p>
+            <p>Mobile: (+60)109277092.</p>
+            <p>Email: internship@conebyte.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>About</h4>
+            <p><a href="Mediser.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">How Medisphere works</a>
+            <a href="#">Transparancy report</a>
+            <a href="#">Contact Us</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <p><a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/"> X </a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <form>
+                <input type="email" id="email" placeholder="Your email address">
+                <button onclick="subscribe()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Medisphere. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer ends here --> 
+
+    <!-- The Log-in Modal starts here -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sign in to Medisphere</h2>
+                <span class="modal-close" id="closeModal">×</span>
+            </div>
+            <div class="modal-body">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="login-btn">Log in</button>
+                <p><a href="#">Login via email link</a></p>
+                <p>New to Medisphere? <a href="#" id="openSignupModal">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- The Log-in Modal ends here -->
+
+    <!-- Sign-up Modal starts here -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sign up for Medisphere</h2>
+                <span class="modal-close" id="closeSignupModal">×</span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+                    <!-- New Fields -->
+                    <label>I am a:</label>
+                    <div class="role-options">
+                        <input type="radio" id="patient" name="role" value="patient" required>
+                        <label for="patient">Patient</label>
+                        <input type="radio" id="doctor" name="role" value="doctor" required>
+                        <label for="doctor">Doctor</label>
+                    </div>
+
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+
+                    <!-- <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                    </div> -->
+
+                    <button class="signup-btn" type="submit">Sign Up</button>
+                </form>
+                <p>Already on Medisphere? <a href="#" id="openLoginModal">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Sign-up Modal ends here -->
+
+    <script src="MSScript.js"></script>
+
+</body>
+</html>
